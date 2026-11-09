@@ -1,0 +1,117 @@
+<html>
+  
+  <head>
+    <title> My Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <header> <!--Container tag-->
+      <h1> Poorvika</h1>
+      <h3> Software Developer, Student </h3>
+    </header>
+    
+      <main>
+        <nav>
+          <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#workexp">Work Experience</a></li>
+            <li><a href="#projects">Projects</a> </li>
+            <li><a href="#">Certifications</a></li>
+            <li><a href="#">Interships</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+            <li><a href="#admin-login" onClick="show_admin_login()">Admin Login</a></li>
+          </ul>
+        </nav>
+        
+        <button id="toggle-theme">Toggle Theme</button><p>
+       
+        <section class="style1" id="education">
+        <h2 id="animateEdu">Education</h2>
+        
+        <h3>VTU</h3>
+        <p>B.E CSE</p>
+        <p>2029</p>
+        
+        <h3>DPS</h3>
+        <p>PCM</p>
+        <p>2025</p>
+          
+        </section>
+        
+        
+        <section class="style1" id="workexp">
+        <h2>Work Experience</h2>
+        
+        <h3>Learning Zone</h3>
+        <p>None</p>
+        <p>2025 - Present</p>
+        
+        <h3>Sony India</h3>
+        <p>Software Engineer - Data Science</p>
+        <p>2021 - Present</p>
+          
+        </section>
+        
+        
+        <section class="style1" id="contact-me">
+          <h2>Contact me</h2>
+          <form id = "contact-form">
+            <div>
+            <label> Name: </label>
+            <input type="text" placeholder="enter name..." id="input_name">
+            </div>
+            
+            <div>
+            <label> Email: </label>
+            <input type="text" id="input_email">
+            </div>
+            
+            <div>
+            <label> Message: </label>
+              <textarea placeholder="please enter your message" id="input_msg"></textarea>
+            </div>
+            <p id="confirm-response"></p>
+            <button type="submit"> Send</button>
+            
+          </form>
+        </section>
+        
+        <section class="style1" id="admin-login">
+          <h2>Admin Login</h2>
+          <form id='admin-form'>
+            <div>
+            <label> Username: </label>
+            <input type="text" placeholder="enter username..." id='input_user'>
+            </div>
+            
+            <div>
+            <label> Password: </label>
+            <input type="password" placeholder="enter password..." id='input_pass'>
+            </div>
+           
+            <button type="submit"> Login </button>
+            
+            
+            
+          </form>
+        </section>
+        
+        
+        <section class="style1" id="user-responses">
+          <h2>User Responses</h2>
+          
+            <div id="user-messages">
+              
+            
+            
+            </div>
+        </section>
+        
+        
+        
+        
+      </main>
+      <script src="script.js"></script>
+  </body>
+</html>
